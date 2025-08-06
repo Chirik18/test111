@@ -1,0 +1,66 @@
+header li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+header li a:hover {
+    color: #2B7FFF;
+}
+.header {
+    background-color: transparent;
+    padding: 0;
+    @media screen and (min-width: $bp-desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 0;
+    background-color: rgb(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    }
+}
+.header__nav {
+    display: flex;
+    @media screen and (min-width: $bp-desktop) {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 240px;
+    }
+}
+.header__ul {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    }
+}
+.header__massendger {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+    display: flex;
+    gap: 32px;
+    }
+}
+.head-masseg {
+    width: 26px;
+    height: 30px;
+}
+.header__burger {
+    display: flex;
+    gap: 243px;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    padding: 0;
+    margin-left: auto;
+    @media screen and (min-width: $bp-desktop) {
+    display: none;
+    }
+}
+.header__menu {
+    display: flex;
+    gap: 243px;
+}

@@ -1,0 +1,80 @@
+.form-stars {
+   position: relative;
+}
+.big-star {
+    position: absolute;
+    top: 305px;
+    left: -365px;
+    animation: spin;
+    animation-duration: 10s;
+    width: 64px;
+    height: 64px;
+}
+.midle-star {
+    @media screen and (min-width: $bp-desktop) {
+    position: absolute;
+    right: -60px;
+    top: -40px;
+    animation: spin;
+    animation-duration: 10s;
+    width: 40px;
+    height: 40px;
+    }
+    display: none;
+}
+.small-star {
+    position: absolute;
+    left: 5px;
+    top: 190px;
+    animation: spin;
+    animation-duration: 10s;
+    width: 16px;
+    height: 16px;
+}
+.face {
+    position: relative;
+    width: 335px;
+    height: 328px;
+    border-radius: 100%;
+    @media screen and (min-width: $bp-desktop) {
+    display: none;
+    }
+}
+.before {
+    position: relative;
+    bottom: 70px;
+}
+.after {
+    position: relative;
+    left: 210px;
+    bottom: 33px;
+}
+.par-face {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+    align-items: flex-start;
+}
+.contact-form {
+    color: #ffffff;
+    padding: 16px 18px;
+}
+.foot-masengers {
+    display: flex;
+    gap: 24px;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+        transform: scale(0.5);
+    }
+    50% {
+        transform: rotate(-100deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
