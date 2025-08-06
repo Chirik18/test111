@@ -1,0 +1,76 @@
+.second-title .accent {
+  color: #2b7fff;
+  max-width: 529px;
+}
+.third-title {
+  font-size: 64px;
+  font-family: "Play", sans-serif;
+  color: #011c44;
+  font-weight: 700;
+  justify-self: center;
+  margin: 176px 0px 0px 0px;
+}
+.third-title .accent {
+  color: #2b7fff;
+}
+.fourth-title {
+  color: #011c44;
+  justify-self: center;
+  margin: 0px 0px 48px 0px;
+}
+.fourth-title .accent {
+  color: #2b7fff;
+}
+.fifth-title {
+  color: #011c44;
+}
+.fifth-title .accent {
+  color: #2b7fff;
+}
+.hero-title {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #2b7fff;
+  @media screen and (min-width: $bp-tablet) {
+    color: #2b7fff;
+    font-family: "Play", sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 114px;
+    width: 529px;
+    padding-top: 53.52px;
+    padding-right: 706px;
+    margin-bottom: 50px;
+  }
+}
+.fourth-title {
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+.fourth-image {
+  border-radius: 0px 150px 0px 150px;
+  transition: transform 0.3s;
+}
+.fourth-image:hover {
+  transform: scale(1.05);
+}
+.fifth-title {
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  justify-self: center;
+  margin: 0px 0px 48px 0px;
+}
+.second-title {
+  @media screen and (min-width: $bp-tablet) {
+    color: #011c44;
+    font-size: 64px;
+    font-weight: 700;
+  }
+  font-size: 32px;
+  font-weight: 700;
+  color: #011c44;
+  font-family: "Roboro", sans-serif;
+}
