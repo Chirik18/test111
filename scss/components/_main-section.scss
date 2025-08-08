@@ -8,6 +8,10 @@
   justify-content: center;
   padding: 100px 0;
   aspect-ratio: 30 / 18;
-  @media screen and (min-device-pixel-ratio: 2) {
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dpx) {
+    background-image: url("../components/Фон@2x.jpg");
   }
 }
