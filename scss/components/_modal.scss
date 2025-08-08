@@ -17,9 +17,16 @@
   right: 42px;
 }
 .order {
+  text-align: start;
   padding: 14px 0px;
   margin-left: 21px;
   font-size: 12px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 8px;
+  }
 }

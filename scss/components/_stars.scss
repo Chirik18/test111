@@ -1,7 +1,16 @@
 .form-stars {
-   position: relative;
+  position: relative;
 }
 .big-star {
+  position: absolute;
+  top: 310px;
+  left: -50px;
+  width: 40px;
+  height: 40px;
+  animation: spin;
+  animation-duration: 10s;
+
+  @media screen and (min-width: $bp-tablet) {
     position: absolute;
     top: 305px;
     left: -365px;
@@ -9,8 +18,13 @@
     animation-duration: 10s;
     width: 64px;
     height: 64px;
+  }
 }
 .midle-star {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
     position: absolute;
     right: -60px;
     top: -40px;
@@ -18,8 +32,12 @@
     animation-duration: 10s;
     width: 40px;
     height: 40px;
+  }
 }
 .small-star {
+  display: none;
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
     position: absolute;
     left: 5px;
     top: 190px;
@@ -27,48 +45,53 @@
     animation-duration: 10s;
     width: 16px;
     height: 16px;
+  }
 }
 .face {
-    position: relative;
-    width: 335px;
-    height: 328px;
-    border-radius: 100%;
+  position: relative;
+  width: 335px;
+  height: 328px;
+  border-radius: 100%;
 }
 .before {
-    position: relative;
-    bottom: 70px;
+  position: relative;
+  bottom: 70px;
 }
 .after {
-    position: relative;
-    left: 210px;
-    bottom: 33px;
+  position: relative;
+  left: 210px;
+  bottom: 33px;
 }
 .par-face {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 40px;
     width: 500px;
     align-items: flex-start;
+  }
 }
 .contact-form {
-    color: #ffffff;
-    padding: 16px 18px;
+  color: #ffffff;
+  padding: 16px 18px;
 }
 .foot-masengers {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 @keyframes spin {
-    0% {
-        transform: rotate(0);
-        transform: scale(0.5);
-    }
-    50% {
-        transform: rotate(-100deg);
-    }
+  0% {
+    transform: rotate(0);
+    transform: scale(0.5);
+  }
+  50% {
+    transform: rotate(-100deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }

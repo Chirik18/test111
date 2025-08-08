@@ -1,48 +1,59 @@
-.button{
-    padding: 16px 32px;
-    border-radius: 32px;
-    background-color: #2B7FFF;
-    color: aliceblue;
-    border-color: #2B7FFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    transition-property: background-color;
-    transition-duration: 0.2s;
+.button {
+  padding: 16px 32px;
+  border-radius: 32px;
+  background-color: #2b7fff;
+  color: aliceblue;
+  border-color: #2b7fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  @media screen and (max-width: $bp-tablet) {
+    padding: 16px 24px;
+  }
 }
-.button:hover{
-    color: black;
-    background-color: #ffffff;
-    border-color: #2B7FFF;
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+
+  @media screen and (max-width: $bp-tablet) {
+    justify-content: center;
+  }
+}
+.button:hover {
+  color: black;
+  background-color: #ffffff;
+  border-color: #2b7fff;
 }
 .span {
-    color: #2B7FFF;
+  color: #2b7fff;
 }
 .free-span {
-    color: #2B7FFF;
+  color: #2b7fff;
 }
 .arrow {
-    width: 45px;
-    height: 23px;
+  width: 45px;
+  height: 23px;
 }
 .button-arrow:hover {
-    background-color: #2B7FFF;
-    border: #ffffff;
+  background-color: #2b7fff;
+  border: #ffffff;
 }
 .button-arrow:hover .arrow {
-    fill: #ffffff;
+  fill: #ffffff;
 }
 .button-arrow {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    width: 48px;
-    height: 48px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    border: 1px solid black;
-    padding: 0;
-     transition-property: background-color;
-    transition-duration: 0.2s;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 0;
+  transition-property: background-color;
+  transition-duration: 0.2s;
 }
