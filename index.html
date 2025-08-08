@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./scss/main.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -51,7 +54,7 @@
             </div>
         </div>
     </header>
-    <main>
+   <!-- <main>
    <section class="main-section">
         <div class="container">
             <div class="hero-section" style="margin-left: 106px;">
@@ -125,29 +128,31 @@
             <section class="fourth-section section" id="procedure">
             <h1 class="fourth-title">Наші <span class="accent">процедури</span></h1>
             <div class="formats-container">
-                <button class="button-arrow" type="button">
+                <button class="button-arrow prew" type="button">
                     <svg class="arrow">
                         <use href="./images/icons.svg#icon-ArrowL-1"></use>
                     </svg>
                 </button>
-            <div class="format-face">
-            <div class="over-text">
-            <div class="container-over-mask">
+            <div class="swiper-container">
+                <div class="format-face">
+                <div class="over-text">
+            <div class="container-over-mask swiper-wrapper">
             <p class="over-mask">Маски <br> для обличчя</p>
             </div>
-            <img class="fourth-image" src="./images/image 1580.jpg" alt="">
+            <img class="swiper-slide" src="./images/image 1580.jpg" alt="">
             <div class="gradient-overlay"></div>
             </div>
             <div class="over-text">
-            <img class="fourth-image" src="./images/image 1570.jpg" alt="">
+            <img class="swiper-slide" src="./images/image 1570.jpg" alt="">
             <div class="gradient-overlay"></div>
             </div>
             <div class="over-text">
-            <img class="fourth-image" src="./images/image 1574.jpg" alt="">
+            <img class="swiper-slide" src="./images/image 1574.jpg" alt="">
             <div class="gradient-overlay"></div>
             </div>
             </div>
-            <button class="button-arrow" type="button">
+            </div>
+            <button class="button-arrow next" type="button">
                     <svg class="arrow">
                         <use href="./images/icons.svg#icon-ArrowR-1"></use>
                     </svg>
@@ -275,5 +280,6 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

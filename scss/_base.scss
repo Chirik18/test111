@@ -1,4 +1,6 @@
-*, *::before, ::after {
+*,
+*::before,
+::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -6,31 +8,36 @@ html {
   scroll-behavior: smooth;
 }
 a {
-    display: inline-block;
+  display: inline-block;
 }
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 h1 {
-    font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
 }
-h1{
-    color: #011C44;
+h1 {
+  color: #011c44;
 }
-address{
-    font-style: normal;
+address {
+  font-style: normal;
 }
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 .body {
   margin: 0 24px;
