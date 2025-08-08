@@ -1,5 +1,5 @@
 .main-section {
-  background-image: url(./);
+  background-image: url(..//..//images/background-1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
@@ -12,6 +12,6 @@
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dpx) {
-    background-image: url(./);
+    background-image: url(../../images/background-1@2x.jpg);
   }
 }
