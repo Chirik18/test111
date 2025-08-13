@@ -6,15 +6,21 @@
 .contact-map {
   flex-shrink: 0;
 }
-.formats-container {
+.formats-section__slider {
   display: flex;
   gap: 32px;
   align-items: center;
+}
+.formats-section__container {
+  overflow: hidden;
 }
 .format-face {
   display: flex;
   gap: 16px;
   flex-shrink: 0;
+}
+.format-card__image {
+  border-radius: 0px 155px 0px 155px;
 }
 .container {
   width: 100%;
