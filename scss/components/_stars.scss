@@ -3,7 +3,7 @@
 }
 .big-star {
   position: absolute;
-  top: 310px;
+  top: 355px;
   left: -50px;
   width: 40px;
   height: 40px;
@@ -12,7 +12,7 @@
 
   @media screen and (min-width: $bp-tablet) {
     position: absolute;
-    top: 305px;
+    top: 355px;
     left: -365px;
     animation: spin;
     animation-duration: 10s;
@@ -27,7 +27,7 @@
     display: block;
     position: absolute;
     right: -60px;
-    top: -40px;
+    top: 25px;
     animation: spin;
     animation-duration: 10s;
     width: 40px;
@@ -40,7 +40,7 @@
     display: block;
     position: absolute;
     left: 5px;
-    top: 190px;
+    top: 260px;
     animation: spin;
     animation-duration: 10s;
     width: 16px;
@@ -48,25 +48,22 @@
   }
 }
 .face {
-  position: relative;
   width: 335px;
   height: 328px;
   border-radius: 100%;
 }
 .before {
-  position: relative;
+align-self: flex-start;
   bottom: 70px;
 }
 .after {
-  position: relative;
+align-self: flex-end;
   left: 210px;
   bottom: 33px;
 }
 .par-face {
-  display: none;
-
+display: none;
   @media screen and (min-width: $bp-tablet) {
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 40px;

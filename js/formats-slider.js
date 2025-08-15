@@ -7,11 +7,16 @@ const swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
+  },
+  1280: {
+    slidesPerView: 3,
   },
   pagination: {
     el: '.swiper-pagination',
+    bulletClass: 'pagination__button',
+    bulletActiveClass: 'pagination__button--active',
   },
   navigation: {
     nextEl: '.button-arrow.next',
