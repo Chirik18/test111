@@ -1,54 +1,93 @@
 footer li a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.2s;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.2s;
 }
 footer li a:hover {
-    color: #2B7FFF;
+  color: #2b7fff;
 }
 .foot-end {
+  background-image: none;
+
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 56px 0px;
+  background-color: #011c44;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $bp-tablet) {
     background-image: url(../images/pexels-photo-8101532-PhotoRoom\ 1.svg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 56px 0px ;
-    background-color: #011C44;
-    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+  }
 }
 .foot-icon {
-    fill: white;
-    list-style-type: none;
+  fill: white;
+  list-style-type: none;
 }
 .foot-container {
-    display: flex;
-    padding: 0;
-    gap: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 16px;
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    flex-basis: 50%;
+  }
 }
 .foot-nav {
+  text-align: center;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
     flex-basis: 50%;
-    display: flex;
-    gap: 20px;
+  }
 }
 .foot-adress {
-    flex-basis: 50%;
+  flex-basis: 50%;
+  display: block;
+
+  gap: 175px;
+  @media screen and (min-width: $bp-tablet) {
     display: flex;
-    gap: 20px;
+  }
 }
 .foot-logo {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 .foot-menu {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
     flex-grow: 1;
+    display: block;
+  }
 }
 .footer-icons {
-    flex-grow: 1;
+  flex-grow: 1;
 }
-.foot-adresss {
-    flex-grow: 1;
-}
-.foot-boxer {
-    flex-grow: 1;
-}
-.foot-masengers {
+.foot__menu--icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+  @media screen and (min-width: $bp-tablet) {
     display: flex;
     gap: 24px;
+    padding-top: 16px;
+  }
+}
+.foot-adresss {
+  flex-grow: 1;
+}
+.foot-boxer {
+  flex-grow: 1;
+}
+.foot-masengers {
+  display: flex;
+  gap: 24px;
 }

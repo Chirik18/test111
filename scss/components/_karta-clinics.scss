@@ -1,12 +1,37 @@
 .karta {
   border-radius: 20px 20px 20px 20px;
+  width: 600px;
+  height: 595px;
+  height: 232px;
+  margin: 0px -16px;
+  @media screen and (min-width: $bp-tablet) {
+    width: 320px;
+    height: 500px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    width: 600px;
+    height: 595px;
+  }
+}
+.contact-map {
+  height: 100%;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin: auto;
+    width: 320px;
+    height: 500px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    width: 600px;
+    height: 595px;
+  }
 }
 .clinics {
   display: flex;
   justify-content: flex-start;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   @media screen and (max-width: $bp-tablet) {
     justify-content: center;

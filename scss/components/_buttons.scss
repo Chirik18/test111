@@ -4,7 +4,7 @@
   background-color: #2b7fff;
   color: aliceblue;
   border-color: #2b7fff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -56,4 +56,8 @@
   padding: 0;
   transition-property: background-color;
   transition-duration: 0.2s;
+}
+.menu-btn-close {
+  background-color: transparent;
+  border: none;
 }

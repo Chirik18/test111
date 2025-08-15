@@ -1,7 +1,12 @@
 .contact-container {
   display: flex;
-  gap: 32px;
+  flex-direction: column-reverse;
+  gap: 24px;
   justify-content: center;
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 .contact-map {
   flex-shrink: 0;
