@@ -1,31 +1,62 @@
 .over-text {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 .over-mask {
+  left: 70px;
+  bottom: 20px;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  @media screen and (min-width: 360px) and (min-width: 413px) {
     left: 145px;
     bottom: 32px;
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+  }
+  @media screen and (min-width: 414px) {
+    left: 85px;
+    bottom: 32px;
     font-size: 22px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    z-index: 2;
+  }
+  @media screen and (min-width: 479px) and (max-width: 600px) {
+    left: 80px;
+    bottom: 32px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 601px) and (max-width: 748px) {
+    left: 85px;
+  }
+  @media screen and (min-width: 749px) and (max-width: 1000px) {
+    left: 140px;
+  }
+  @media screen and (min-width: 1001px) {
+    left: 145px;
+  }
 }
 .container-over-mask {
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
 }
 .gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 0px 100px;
+  background: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+  @media screen and (min-width: 360px) and (min-width: 413px) {
     border-radius: 4px 158px;
-    background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+  }
 }

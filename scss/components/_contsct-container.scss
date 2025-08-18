@@ -25,7 +25,10 @@
   flex-shrink: 0;
 }
 .format-card__image {
-  border-radius: 0px 155px 0px 155px;
+  border-radius: 0px 100px 0px 100px;
+  @media screen and (min-width: 360px) and (min-width: 413px) {
+    border-radius: 0px 155px 0px 155px;
+  }
 }
 .container {
   width: 100%;

@@ -1,0 +1,79 @@
+.advantages {
+  background-image: url(../images/blueimage.svg);
+  position: relative;
+
+  &__title {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+      font-family: 'Play', sans-serif;
+      color: #011c44;
+      font-weight: 700;
+      justify-self: center;
+      margin: 176px 0px 0px 0px;
+      margin-bottom: 48px;
+    }
+  }
+  &__title .accent {
+    color: #2b7fff;
+  }
+  &__list {
+    flex-direction: column;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: row;
+      gap: 56px;
+      justify-content: center;
+    }
+  }
+  &__people {
+    border: 1px solid gray;
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 32px;
+    box-shadow: 2px 2px 2px grey;
+
+    @media screen and (min-width: $bp-tablet) {
+    }
+  }
+  &__item {
+    margin-bottom: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+    }
+  }
+  &-crown {
+    fill: #2b7fff;
+    width: 48px;
+    height: 55px;
+  }
+  &-sciens {
+    fill: #2b7fff;
+    width: 45px;
+    height: 55px;
+  }
+  &-medici {
+    fill: #2b7fff;
+    width: 48px;
+    height: 55px;
+  }
+  &-box {
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+  }
+}

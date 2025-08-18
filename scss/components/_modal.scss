@@ -10,23 +10,30 @@
   padding-top: 42px;
   padding-right: 144px;
   overflow-y: auto;
-}
-.modal-btn-close {
-  position: absolute;
-  top: 42px;
-  right: 42px;
-}
-.order {
-  text-align: start;
-  padding: 14px 0px;
-  margin-left: 21px;
-  font-size: 12px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-
-  @media screen and (max-width: $bp-tablet) {
-    font-size: 11px;
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 64px;
+    font-family: 'Play', sans-serif;
     text-align: center;
-    padding-top: 8px;
+    padding-bottom: 20px;
+  }
+  &__call {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 32px;
+    font-weight: 600;
+    text-align: center;
+  }
+  &-btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+  }
+  &__accent {
+    color: #2b7fff;
   }
 }

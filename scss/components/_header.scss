@@ -14,71 +14,77 @@ header li a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 32px 0;
+    padding: 25px 0;
     background-color: rgb(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
   }
-}
-.header__logo {
-  padding: 16px 20px;
-  @media screen and (min-width: $bp-desktop) {
-    padding: 32px;
+  &__icons {
+    width: 42px;
+    height: 42px;
   }
-}
-.header__nav {
-  display: flex;
-  @media screen and (min-width: $bp-desktop) {
-    flex-grow: 1;
+  &__logo {
+    padding: 16px 20px;
+    @media screen and (min-width: $bp-desktop) {
+      padding: 32px;
+    }
+  }
+  &__nav {
     display: flex;
-    align-items: center;
-    gap: 240px;
+    @media screen and (min-width: $bp-desktop) {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      gap: 240px;
+    }
   }
-}
-.header__ul {
-  display: none;
-  @media screen and (min-width: $bp-desktop) {
+  &__ul {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 15px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+  &__burger {
     display: flex;
-    flex-grow: 1;
-    justify-content: center;
+    gap: 243px;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    padding: 0;
+    margin-left: auto;
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+  &__menu {
+    display: flex;
+    gap: 243px;
+  }
+  &__logo--menu {
+    padding: 24px 20px;
+  }
+  &-link--menu {
+    padding: 8px 20px;
   }
 }
-.header__massendger {
+
+.header__social {
   display: none;
   @media screen and (min-width: $bp-desktop) {
     display: flex;
     gap: 32px;
   }
-}
-.head-masseg {
-  width: 26px;
-  height: 30px;
-}
-.header__burger {
-  display: flex;
-  gap: 243px;
-  background-color: transparent;
-  width: 24px;
-  height: 24px;
-  border: 0;
-  padding: 0;
-  margin-left: auto;
-  @media screen and (min-width: $bp-desktop) {
-    display: none;
+  &--masseg {
+    width: 26px;
+    height: 30px;
   }
-}
-.header__menu {
-  display: flex;
-  gap: 243px;
-}
-.header__icons {
-  width: 42px;
-  height: 42px;
-}
-.header__logo--menu {
-  padding: 24px 20px;
-}
-.header-link--menu {
-  padding: 8px 20px;
+  &--link {
+    color: red;
+    fill: red;
+  }
 }
 .head__menu--icon {
   display: flex;

@@ -1,85 +1,3 @@
-.second-title .accent {
-  font-size: 32px;
-  font-weight: 700;
-  color: #2b7fff;
-  font-family: 'Roboto', sans-serif;
-  @media screen and (min-width: $bp-tablet) {
-    color: #2b7fff;
-    font-size: 64px;
-    font-weight: 700;
-  }
-}
-.second-title {
-  @media screen and (min-width: $bp-tablet) {
-    color: #011c44;
-    font-size: 64px;
-    font-weight: 700;
-  }
-  font-size: 32px;
-  font-weight: 700;
-  color: #011c44;
-  font-family: 'Roboro', sans-serif;
-}
-.third-title {
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 24px;
-
-  @media screen and (min-width: $bp-tablet) {
-    font-size: 64px;
-    font-family: 'Play', sans-serif;
-    color: #011c44;
-    font-weight: 700;
-    justify-self: center;
-    margin: 176px 0px 0px 0px;
-    margin-bottom: 48px;
-  }
-}
-.third-title .accent {
-  color: #2b7fff;
-}
-.fourth-title {
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 24px;
-  @media screen and (min-width: $bp-tablet) {
-    color: #011c44;
-    justify-self: center;
-    margin: 0px 0px 48px 0px;
-    font-family: 'Play', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-  }
-}
-.fourth-title .accent {
-  color: #2b7fff;
-}
-.fifth-title .accent {
-  color: #2b7fff;
-}
-.hero-title {
-  text-align: center;
-  font-size: 54px;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #2b7fff;
-  @media screen and (min-width: $bp-tablet) {
-    text-align: start;
-    color: #2b7fff;
-    font-family: 'Play', sans-serif;
-    font-size: 140px;
-    font-weight: 700;
-    line-height: 114px;
-    width: 529px;
-    padding-top: 53.52px;
-    padding-right: 706px;
-    margin-bottom: 50px;
-  }
-}
 .fourth-image {
   border-radius: 0px 150px 0px 150px;
   transition: transform 0.3s;
@@ -87,18 +5,25 @@
 .fourth-image:hover {
   transform: scale(1.05);
 }
-.fifth-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  text-align: center;
-  padding-bottom: 24px;
 
-  @media screen and (min-width: $bp-tablet) {
-    font-family: 'Play', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    justify-self: center;
-    margin: 0px 0px 48px 0px;
+.contact {
+  padding-bottom: 96px;
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-family: 'Play', sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      justify-self: center;
+      margin: 0px 0px 48px 0px;
+    }
+    &__ttitle .accent {
+      color: #2b7fff;
+    }
   }
 }

@@ -1,4 +1,4 @@
-.main-section {
+.hero {
   background-image: url(..//..//images/background-1.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,5 +13,51 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dpx) {
     background-image: url(../../images/background-1@2x.jpg);
+  }
+  &__clinics {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+    @media screen and (max-width: $bp-tablet) {
+      justify-content: center;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #2b7fff;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: start;
+      color: #2b7fff;
+      font-family: 'Play', sans-serif;
+      font-size: 140px;
+      font-weight: 700;
+      line-height: 114px;
+      width: 529px;
+      padding-top: 53.52px;
+      padding-right: 706px;
+      margin-bottom: 50px;
+    }
+  }
+  &__offer {
+    text-align: start;
+    padding: 14px 0px;
+    margin-left: 21px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 11px;
+      text-align: center;
+      padding-top: 8px;
+    }
   }
 }

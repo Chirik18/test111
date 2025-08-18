@@ -3,18 +3,25 @@
   border-radius: 32px;
   background-color: #2b7fff;
   color: aliceblue;
-  border-color: #2b7fff;
+  border: 1px solid #2b7fff;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 0.2s;
+  transition: background-color 0.2s;
+
   @media screen and (max-width: $bp-tablet) {
     padding: 16px 24px;
   }
+
+  &:hover {
+    color: black;
+    background-color: #ffffff;
+    border-color: #2b7fff;
+  }
 }
-.button-container {
+
+.button__container {
   display: flex;
   justify-content: flex-start;
 
@@ -22,29 +29,22 @@
     justify-content: center;
   }
 }
-.button:hover {
-  color: black;
-  background-color: #ffffff;
-  border-color: #2b7fff;
-}
+
 .span {
   color: #2b7fff;
 }
-.free-span {
-  color: #2b7fff;
-}
-.arrow {
-  width: 45px;
-  height: 23px;
-}
-.button-arrow:hover {
+.button__arrow:hover {
   background-color: #2b7fff;
   border: #ffffff;
 }
-.button-arrow:hover .arrow {
+.button__arrow:hover .arrow {
   fill: #ffffff;
 }
-.button-arrow {
+.button__slider-arrow {
+  width: 45px;
+  height: 23px;
+}
+.button__arrow {
   display: flex;
   align-items: center;
   cursor: pointer;

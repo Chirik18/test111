@@ -20,12 +20,33 @@ footer li a:hover {
     flex-direction: row;
     flex-basis: 50%;
   }
+  &__menu--icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 24px;
+      padding-top: 16px;
+    }
+  }
+  &-adresss {
+    flex-grow: 1;
+  }
+  &__boxer {
+    flex-grow: 1;
+  }
+  &-masengers {
+    display: flex;
+    gap: 24px;
+  }
 }
-.foot-icon {
+&-icon {
   fill: white;
   list-style-type: none;
 }
-.foot-container {
+&__container {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -36,7 +57,7 @@ footer li a:hover {
     flex-basis: 50%;
   }
 }
-.foot-nav {
+&__nav {
   text-align: center;
   flex-basis: 50%;
   display: flex;
@@ -46,48 +67,24 @@ footer li a:hover {
     flex-direction: row;
     flex-basis: 50%;
   }
-}
-.foot-adress {
-  flex-basis: 50%;
-  display: block;
-
-  gap: 175px;
-  @media screen and (min-width: $bp-tablet) {
-    display: flex;
-  }
-}
-.foot-logo {
-  flex-grow: 1;
-}
-.foot-menu {
-  display: none;
-
-  @media screen and (min-width: $bp-tablet) {
-    flex-grow: 1;
+  &__adress {
+    flex-basis: 50%;
     display: block;
+
+    gap: 175px;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
   }
-}
-.footer-icons {
-  flex-grow: 1;
-}
-.foot__menu--icon {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: flex-start;
-  @media screen and (min-width: $bp-tablet) {
-    display: flex;
-    gap: 24px;
-    padding-top: 16px;
+  &__logo {
+    flex-grow: 1;
   }
-}
-.foot-adresss {
-  flex-grow: 1;
-}
-.foot-boxer {
-  flex-grow: 1;
-}
-.foot-masengers {
-  display: flex;
-  gap: 24px;
+  &-menu {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-grow: 1;
+      display: block;
+    }
+  }
 }
