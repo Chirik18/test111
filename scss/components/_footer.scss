@@ -31,41 +31,31 @@ footer li a:hover {
       padding-top: 16px;
     }
   }
-  &-adresss {
-    flex-grow: 1;
+  &-icon {
+    fill: white;
+    list-style-type: none;
   }
-  &__boxer {
-    flex-grow: 1;
-  }
-  &-masengers {
+  &__container {
+    text-align: center;
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    padding: 0;
+    gap: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+    }
   }
-}
-&-icon {
-  fill: white;
-  list-style-type: none;
-}
-&__container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  gap: 16px;
-  @media screen and (min-width: $bp-tablet) {
-    flex-direction: row;
+  &__nav {
+    text-align: center;
     flex-basis: 50%;
-  }
-}
-&__nav {
-  text-align: center;
-  flex-basis: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  @media screen and (min-width: $bp-tablet) {
-    flex-direction: row;
-    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+    }
   }
   &__adress {
     flex-basis: 50%;
@@ -86,5 +76,15 @@ footer li a:hover {
       flex-grow: 1;
       display: block;
     }
+  }
+  &-adresss {
+    flex-grow: 1;
+  }
+  &__boxer {
+    flex-grow: 1;
+  }
+  &-masengers {
+    display: flex;
+    gap: 24px;
   }
 }
