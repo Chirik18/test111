@@ -7,10 +7,12 @@
     flex-direction: row;
     gap: 32px;
   }
+
+  &-map {
+    flex-shrink: 0;
+  }
 }
-.contact-map {
-  flex-shrink: 0;
-}
+
 .formats-section__slider {
   display: flex;
   gap: 32px;
@@ -35,4 +37,12 @@
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 16px;
+}
+.contactall-form {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 56px;
+  background-color: #011c44;
+  border-radius: 32px;
+  flex-basis: 422px;
 }
